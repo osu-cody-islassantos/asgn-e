@@ -8,25 +8,37 @@
 		margin-left: 25%;
 	}
 	#self{
-		height: 300px;
+		max-height: 300px;
+		min-height: 270px;
+		
+		
 	}
 
 	#ex2{
 		height:300px;
-	margin: auto;}
+	margin-left: auto;
+	margin-right: auto;
+		justify-content: center;
+		align-content: center;
+		
+	}
 
 	
 	#ex1{
 		height:300px;
-	margin-left:5%;}
+	margin-left:5%;
+		justify-content: center;
+		align-content: center;s}
 	
 	h4{margin-left: 47%;}
-	h4 responsive{margin:auto;}
+	
 	p{
 		max-width: 700px;
 			margin-left: auto;
 	margin-right: auto;
 		padding: 10px;
+	
+	
 	}
 	body{background-color: #b01c3d;
 	}
@@ -45,6 +57,7 @@
 	margin-right: auto;
 	grid-area: footer;
 	max-width: 800px;
+
 		
 	}
 	footer responsive{
@@ -58,11 +71,13 @@
 	height: 65px;
 		margin-left: auto;
 	margin-right: auto;
+	text-align: justify;
+	
 
 
 	
 	
-} /* This was the code I borrowed from w3schools */
+} 
 
 .topnav a {
 
@@ -70,6 +85,7 @@
   text-decoration: none;
   font-size: 17px;
 	margin-left: 160px;
+	
 
 	
 }
@@ -94,7 +110,7 @@
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
-    float: right;
+    float:right;
     display: block;
   }
 }
@@ -105,7 +121,7 @@
     position: absolute;
     right: 0;
     top: 0;
-	
+
 	
   }
   .topnav.responsive a {
@@ -116,8 +132,7 @@
   }
 }
 
-@media screen and (min-width:784px){ /* This is where I'll put most of the responsive rules we've covered weeks 1-4 */
-	
+@media screen and (min-width:784px){	
 	}
 	}
 </style>
@@ -128,9 +143,9 @@
 <header><img src="links/asgn-e-logo.svg" id="logo" /></header>
 	
 <nav class="topnav" id="myTopnav" min-width="375px" max-width="1000px">
-  <a href="index.html" class="active">Home</a>
-  <a href="asgn-e-pg2.html">Report</a>
-  <a href="asgn-e-pg3.html">Sources</a>
+  <a href="index.html" class="active">HOME</a>
+  <a href="asgn-e-pg2.html">REPORT</a>
+  <a href="asgn-e-pg3.html">SOURCES</a>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
   </a>
@@ -161,7 +176,7 @@
     <h3>ASGN-E, Cody Islas-Santos</h3>
     </footer>
 
-</div><!-- This ends the "wrapper"-->
+</div>
 
 <script>
 function myFunction() {
